@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>中国移动在线客服</title>
+  <!--灰度；灰度https://tydh.cmcc-cs.cn:31213/webchat_hd-->
+  <link rel="stylesheet" :href="https://tydh.cmcc-cs.cn:31213/webchat_hd/static/css/webchat-main-1.0.0.css"><link>
+  <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="https://tydh.cmcc-cs.cn:31213/webchat_hd/lte-ie8-1.0.0.js"></script>
+</head>
+<body>
+<script>
+  $(document).ready(function(){
+    var config = {
+      companyId: 'bjydwz_webchat',
+      appKey: 'bjydwz_webchat#BJ46128298143',
+      deviceNo: 'string',
+      provinceCode: '100',
+      cityCode: '100',
+      username: 'guest',
+      ent: 'string'
+    }
+    webChat.init(config,function() {
+      console.log('初始化成功回调函数执行')
+    },function(error){
+      console.log('初始化失败回调函数执行')
+    })
+  })
+</script>
+<script src="https://tydh.cmcc-cs.cn:31213/webchat_hd/easemob/webim.config.js"></script>
+<script src="https://tydh.cmcc-cs.cn:31213/webchat_hd/easemob/strophe-1.2.8.min.js"></script>
+<script src="https://tydh.cmcc-cs.cn:31213/webchat_hd/easemob/websdk-1.4.13.js"></script>
+<script src="https://tydh.cmcc-cs.cn:31213/webchat_hd/static/js/webchat-main-1.0.0.js"></script>
+</body>
+</html>

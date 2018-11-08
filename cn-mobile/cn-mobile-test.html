@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>中国移动在线客服</title>
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" :href="http://221.181.129.81:10110/webchat/static/css/webchat-main-1.0.0.css"><link>
+  <script src="http://221.181.129.81:10110/webchat/lte-ie8-1.0.0.js"></script>
+</head>
+<body>
+<script>
+  $(document).ready(function(){
+    var config = {
+      companyId: '8dyk_h5',
+      appKey: '8dyk_h5#ZB41308313185',
+      deviceNo: 'string',
+      provinceCode: '371',
+      cityCode: '100',
+      ent: 'string'
+    }
+    webChat.init(config,function() {
+      console.log('初始化成功回调函数执行')
+    },function(error){
+      console.log('初始化失败回调函数执行')
+    })
+  })
+</script>
+<script src="http://221.181.129.81:10110/webchat/easemob/webim.config.js"></script>
+<script src="http://221.181.129.81:10110/webchat/easemob/strophe-1.2.8.min.js"></script>
+<script src="http://221.181.129.81:10110/webchat/easemob/websdk-1.4.13.js"></script>
+<script src="http://221.181.129.81:10110/webchat/static/js/webchat-main-1.0.0.js"></script>
+</body>
+</html>

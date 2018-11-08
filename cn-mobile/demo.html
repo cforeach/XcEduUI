@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="renderer" content="webkit"/>
+  <title>中国移动在线客服</title>
+
+  <!-- 引入webchat样式表文件 -->
+  <link rel="stylesheet" href="./static/css/webchat-main-1.0.0.css?v=1.1">
+  <link rel="stylesheet" href="./static/css/home.css?v=1.1">
+  <script src="./lte-ie8-1.0.0.js?v=1.1"></script>
+  <script src="./static/js/getUserInfo.js?v=1.1"></script>
+</head>
+
+<body>
+<!-- 引入webcaht SDK -->
+<script src="./easemob/webim.config.js?v=1.1"></script>
+<script src="./easemob/strophe-1.2.8.min.js?v=1.1"></script>
+<script src="./easemob/websdk-1.4.13.js?v=1.1"></script>
+<script src="./static/js/webchat-main-1.0.0.js?v=1.1"></script>
+
+<!-- 在引入SDK后编写业务代码，demo仅作参考，部分业务也许不适合接入渠道，自行调整。 -->
+
+<script>var ie=navigator.userAgent.toLowerCase().match(/msie ([\d]+)/);ie&&Number(ie[1])<=9?window.location.href="./reminder.html":getInitParams(function(e){e.slides=[{title:"10085微商城",imgsrc:"./static/img/dspd.jpg",url:"http://mall.10085.cn/c"}],e.issues=[{issue:"余额查询",answer:"答：你好，您可以拨打1008611，随后就会收到当月余额、语音或流量套餐使用情况等内容的短信；您也可以登录www.10086.cn，选择右上角的“话费查询”，然后再选择“余额查询”即可，希望对您有所帮助，感谢您的关注！"},{issue:"流量、套餐使用情况",answer:"答：您好，请您登录www.10086.cn，选择右上角的“话费查询”，然后再选择“套餐余量”即可，希望对您有所帮助，感谢您的关注！"},{issue:"账单查询",answer:"答：您好，请您登录www.10086.cn，选择右上角的“话费查询”，然后再选择“账单查询”即可，希望对您有所帮助，感谢您的关注！"},{issue:"详单查询",answer:"答：您好，请您登录www.10086.cn，选择右上角的“话费查询”，然后再选择“详细明细”即可，希望对您有所帮助，感谢您的关注！"},{issue:"已订购业务查询",answer:"答：您好，请您登录www.10086.cn，选择右上角的“话费查询”，然后再选择“已订购业务”即可，希望对您有所帮助，感谢您的关注！"},{issue:"国际漫游统一资费",answer:"答：您好，请您登录http://www.10086.cn/roaming/search/indexc.html查看“国际漫游统一资费表”即可，希望对您有所帮助，感谢您的关注！"},{issue:"港澳台漫游统一资费",answer:"答：您好，请您登录http://www.10086.cn/roaming/search/indexc.html查看“港澳台漫游统一资费表”即可，希望对您有所帮助，感谢您的关注！"}],webChat.init(e,function(){window.console&&window.console.log&&(console.log("初始化成功回调函数执行"),webChat.panelControl(!0),webChat.setChatWindowVisible(!0),webChat.onClosed=function(){window.location.href="./welcome.html"})},function(e){window.console&&window.console.log&&console.log("初始化失败回调函数执行")})})</script>
+</body>
+
+</html>
