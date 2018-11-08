@@ -30,7 +30,8 @@ export const page_get = id => {
 }
 /*页面删除*/
 export const page_del = id => {
-  return http.requestDelete(apiUrl+'/cms/page/del/'+id)
+  return http.requestDe
+  lete(apiUrl+'/cms/page/del/'+id)
 }
 /*生成静态文件 */
 export const page_generateHtml= id => {
